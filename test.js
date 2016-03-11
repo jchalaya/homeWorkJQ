@@ -14,21 +14,13 @@ $("input:last").click(function() {
         perc = perc + 20;
         ball = ball + 5;
     }
-    if ($("input:eq(13)").prop("checked") == true) {
-        perc = perc + 10;
-        ball = ball + 2.5;
+    if ($("input:eq(12)").prop("checked") == false && $("input:eq(13)").prop("checked") == true && $("input:eq(14)").prop("checked") == false && $("input:eq(15)").prop("checked") == true) {
+        perc = perc + 20;
+        ball = ball + 5;
     }
-    if ($("input:eq(15)").prop("checked") == true) {
-        perc = perc + 10;
-        ball = ball + 2.5;
-    }
-    if ($("input:eq(16)").prop("checked") == true) {
-        perc = perc + 10;
-        ball = ball + 2.5;
-    }
-    if ($("input:eq(17)").prop("checked") == true) {
-        perc = perc + 10;
-        ball = ball + 2.5;
+    if ($("input:eq(16)").prop("checked") == true && $("input:eq(17)").prop("checked") == true && $("input:eq(18)").prop("checked") == false && $("input:eq(19)").prop("checked") == false) {
+        perc = perc + 20;
+        ball = ball + 5;
     }
     alert("Вы набрали " + ball + " баллов  " + perc + " % правильных ответов.");
 });
